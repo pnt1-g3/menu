@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Vinculo a la librería "Bootstrap" -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Vinculo a la librería "Bootstrap" -->
+
+
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Mi página de prueba</title>
+</head>
+
+<body>
+    <main>
+        <header id="banner">
+            <h1 class="">MENÚ</h1>
+        </header>
+
+        <section>
+            <div class="contenedor-menus">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/menu1.jpg" class="card-img-top" alt="menu 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Asado</h5>
+                        <!--<p class="card-text">Tira de asado con fritas.</p>-->
+                        <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="img/menu2.jpg" class="card-img-top" alt="menu 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Milanesa</h5>
+                        <!--<p class="card-text">Milanesa napolitana con fritas</p>-->
+                        <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="img/menu3.jpg" class="card-img-top" alt="menu 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Osobuco</h5>
+                        <!--<p class="card-text">Osobuco</p>-->
+                        <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <form class="formulario">
+                <div>
+                    <h1>Arma tu pedido!</h1>
+                </div>
+                <div>
+                    <label for="nombreCompleto">A nombre de:</label>
+                    <input class="form-control" type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Apellido y nombre" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Telefono de contacto:</label>
+                    <input class="form-control" type="tel" id="telefono" name="telefono" placeholder="xx-xxxx-xxxx" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electronico:</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="email@ejemplo.com">
+                </div>
+
+                <div>
+                    <label for="medioDePago">Selecciona el medio de pago:</label>
+                    <div class="btn-group form-control" role="group" aria-label="Opciones de medio de pago">
+                        <input required type="radio" class="btn-check" name="metodoPago" id="tarjetaVisa" autocomplete="off" value="tc">
+                        <label class="btn btn-outline-primary" for="tarjetaVisa">Tarjeta Visa</label>
+
+                        <input type="radio" class="btn-check" name="metodoPago" id="MELI" autocomplete="off" value="meli">
+                        <label class="btn btn-outline-primary" for="MELI">MercadoPago</label>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="reset" class="btn btn-danger">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div>
+                <span class="text-muted">Pie de página.</span>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

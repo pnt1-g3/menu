@@ -1,0 +1,58 @@
+﻿/* banner */
+#banner {
+    text-align: center;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    padding: 150px;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+    #banner h1 {
+        color: white;
+        font-size: 50px;
+    }
+
+    #banner p {
+        color: white;
+        opacity: 0.8;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+/* banner */
+
+
+/* cuerpo */
+
+.contenedor-menus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 50px;
+}
+
+.formulario {
+    margin: auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* cuerpo */
+
+
+/* footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    width: 100%;
+}
+/* footer */
