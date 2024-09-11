@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\sml\\ORT\\1er a\u00F1o\\2C\\Programaci\u00F3n en Nuevas Tecnolog\u00EDas 1\\PNT1-Grupo3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{53A4EA21-24AE-482D-8B02-04ACDDF6D2ED}|PNT1-Grupo3\\PNT1-Grupo3.csproj|c:\\users\\user\\desktop\\sml\\ort\\1er a\u00F1o\\2c\\programaci\u00F3n en nuevas tecnolog\u00EDas 1\\pnt1-grupo3\\pnt1-grupo3\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{53A4EA21-24AE-482D-8B02-04ACDDF6D2ED}|PNT1-Grupo3\\PNT1-Grupo3.csproj|solutionrelative:pnt1-grupo3\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{53A4EA21-24AE-482D-8B02-04ACDDF6D2ED}|PNT1-Grupo3\\PNT1-Grupo3.csproj|c:\\users\\user\\desktop\\sml\\ort\\1er a\u00F1o\\2c\\programaci\u00F3n en nuevas tecnolog\u00EDas 1\\pnt1-grupo3\\pnt1-grupo3\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{53A4EA21-24AE-482D-8B02-04ACDDF6D2ED}|PNT1-Grupo3\\PNT1-Grupo3.csproj|solutionrelative:pnt1-grupo3\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -18,33 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\sml\\ORT\\1er a\u00F1o\\2C\\Programaci\u00F3n en Nuevas Tecnolog\u00EDas 1\\PNT1-Grupo3\\PNT1-Grupo3\\index.html",
               "RelativeDocumentMoniker": "PNT1-Grupo3\\index.html",
               "ToolTip": "C:\\Users\\User\\Desktop\\sml\\ORT\\1er a\u00F1o\\2C\\Programaci\u00F3n en Nuevas Tecnolog\u00EDas 1\\PNT1-Grupo3\\PNT1-Grupo3\\index.html",
               "RelativeToolTip": "PNT1-Grupo3\\index.html",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAIwEIAAAAwAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADEAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-09-10T01:20:27.168Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\sml\\ORT\\1er a\u00F1o\\2C\\Programaci\u00F3n en Nuevas Tecnolog\u00EDas 1\\PNT1-Grupo3\\PNT1-Grupo3\\styles\\style.css",
-              "RelativeDocumentMoniker": "PNT1-Grupo3\\styles\\style.css",
-              "ToolTip": "C:\\Users\\User\\Desktop\\sml\\ORT\\1er a\u00F1o\\2C\\Programaci\u00F3n en Nuevas Tecnolog\u00EDas 1\\PNT1-Grupo3\\PNT1-Grupo3\\styles\\style.css",
-              "RelativeToolTip": "PNT1-Grupo3\\styles\\style.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-10T01:20:29.63Z",
+              "WhenOpened": "2024-09-10T23:34:23.835Z",
               "EditorCaption": ""
             }
           ]

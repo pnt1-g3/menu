@@ -25,24 +25,24 @@
         <section id="principal">
             <div class="contenedor-menus">
 
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 18rem;" onclick="check(this)">
                     <img src="img/menu1.jpg" class="card-img-top" alt="menu 1">
                     <div class="card-body">
                         <h5 class="card-title">Asado</h5>
                         <p class="card-text">Incluye una bebida a elección.</p>
-                        <label for="checkbox" class="precio" style="font-weight: 600">$ 13.634</label>
-                        <input type="checkbox" onclick="agregar()" value="asado" />
+                        <label class="precio" style="font-weight: 600">$ 13.634</label>
+                        <input type="checkbox" onclick="agregar(this)" value="asado" name="Asado"/>
                         <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
-                        </div>
                     </div>
+                </div>
 
                 <div class="card" style="width: 18rem;">
                     <img src="img/menu2.jpg" class="card-img-top" alt="menu 1">
                     <div class="card-body">
                         <h5 class="card-title">Milanesa</h5>
                         <p class="card-text">Incluye una bebida a elección.</p>
-                        <label for="checkbox" class="precio" style="font-weight: 600">$ 12.000</label>
-                        <input type="checkbox" onclick="agregar()" value="milanesa" />
+                        <label class="precio" style="font-weight: 600">$ 12.000</label>
+                        <input type="checkbox" onclick="agregar(this)" value="milanesa" name="Milanesa"/>
                         <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
                     </div>
                 </div>
@@ -52,8 +52,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Osobuco</h5>
                         <p class="card-text">Incluye una bebida a elección.</p>
-                        <label for="checkbox" style="font-weight: 600">$ 17.999</label>
-                        <input type="checkbox" onclick="agregar()" value="osobuco" />
+                        <label style="font-weight: 600">$ 17.999</label>
+                        <input type="checkbox" onclick="agregar(this)" value="osobuco" name="Osobuco"/>
 
                         <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
                     </div>
@@ -70,8 +70,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Bocha de helado</h5>
                         <p class="card-text">Dos gustos a elección.</p>
-                        <label for="checkbox" class="precio" style="font-weight: 600">$ 3.000</label>
-                        <input type="checkbox" onclick="agregar()" value="helado"/>
+                        <label class="precio" style="font-weight: 600">$ 3.000</label>
+                        <input type="checkbox" onclick="agregar(this)" value="helado" name="Bocha de Helado" />
                         <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
                     </div>
                 </div>
@@ -81,8 +81,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Flan</h5>
                         <p class="card-text">Con crema sin cargo.</p>
-                        <label for="checkbox" class="precio" style="font-weight: 600">$ 4.500</label>
-                        <input type="checkbox" onclick="agregar()" value="flan"/>
+                        <label class="precio" style="font-weight: 600">$ 4.500</label>
+                        <input type="checkbox" onclick="agregar(this)" value="flan" name="Flan" />
                         <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
                     </div>
                 </div>
@@ -92,8 +92,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Volcán de chocolate</h5>
                         <p class="card-text">Dulce de leche incluido.</p>
-                        <label for="checkbox" class="precio" style="font-weight: 600">$ 5.999</label>
-                        <input type="checkbox" onclick="agregar()" value="volcan" />
+                        <label class="precio" style="font-weight: 600">$ 5.999</label>
+                        <input type="checkbox" onclick="agregar(this)" value="volcan" name="Volcán de chocolate" style="" />
                         <!-- <a href="#" class="btn btn-primary">Ver mas</a> -->
                     </div>
                 </div>
@@ -102,7 +102,7 @@
         </section>
 
         <section class="py-5">
-            <form class="formulario">
+            <form class="formulario" id="pedido">
                 <div>
                     <h1>Arma tu pedido!</h1>
                 </div>
@@ -132,6 +132,10 @@
                     </div>
                 </div>
 
+                <div id="detalle">
+                    <!-- Aca se agregan los pedidos seleccionados con el checkbox -->
+                </div>
+
                 <div class="text-center">
                     <button type="reset" class="btn btn-danger">Cancelar</button>
                     <button type="submit" class="btn btn-primary">Enviar</button>
@@ -144,6 +148,30 @@
                 <span class="text-muted">Pie de página.</span>
             </div>
         </footer>
+
+        <script>
+
+            function agregar(checkbox) {
+                const form = document.getElementById("detalle");
+
+                if (checkbox.checked) {
+                    const div = document.createElement("div");
+                    const nombrePedido = checkbox.name;
+
+                    div.classList.add("item-row");
+                    div.setAttribute("data-value", checkbox.value);
+
+                    div.innerHTML = `<label> - ${nombrePedido}</label>`;
+                    form.appendChild(div);
+                } else { // Borra el pedido al deseleccionar el checkbox
+                    const items = document.querySelectorAll(`.item-row[data-value="${checkbox.value}"]`);
+                    items.forEach(item => item.remove());
+                }
+            }
+
+        </script>
+
+
     </main>
 </body>
 
@@ -153,6 +181,5 @@
     .card:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
-
 </style>
+
